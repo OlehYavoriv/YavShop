@@ -1,0 +1,121 @@
+@import "../../../styles/variables.scss";
+.create_product {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  &__form {
+    max-width: 500px;
+    min-width: 290px;
+    width: 100%;
+    margin: 15px 30px;
+  }
+  &__fields {
+    width: 100%;
+    min-height: 40px;
+    padding: 0 5px;
+    background-color: $oxford-blue;
+    resize: none;
+    outline: none;
+    border: 1px solid $sunglow;
+    border-radius: 4px;
+    padding: 1rem;
+    color: $white;
+  }
+}
+.upload {
+  max-width: 45rem;
+  height: 50rem;
+  width: 100%;
+  border: 1px solid $sunglow;
+  padding: 15px;
+  margin: 20px;
+  position: relative;
+}
+.file_up {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  &:before {
+    content: "+";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $oxford-blue;
+    color: $sunglow;
+    font-size: 17rem;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+  }
+}
+
+.file_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: $oxford-blue;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  span {
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    background: $sunglow;
+    border: 1px solid $sunglow;
+    border-radius: 50%;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-weight: 900;
+    color: $oxford-blue;
+  }
+}
+
+.row {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  background: $sunglow;
+  color: $oxford-blue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: 0.8s;
+  border-radius: 4px;
+  &:hover {
+    background: $oxford-blue;
+    color: $sunglow;
+    border-radius: 1px solid $sunglow;
+  }
+}
+
+select {
+  border: none;
+  outline: none;
+  background-color: $oxford-blue;
+  color: $white;
+  height: 4rem;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+label {
+  color: $white;
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}

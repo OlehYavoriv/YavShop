@@ -1,0 +1,56 @@
+@import "../../../styles/variables.scss";
+
+.history_page {
+  overflow-x: auto;
+  img {
+    width: 70px;
+    height: 100px;
+    object-fit: contain;
+  }
+  &__title {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: $sunglow;
+    font-size: 16px;
+  }
+  &__underTitle {
+    text-align: center;
+    color: $white;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+  }
+  table {
+    margin: 1rem auto;
+    width: 100%;
+  }
+  table,
+  th,
+  tr,
+  td {
+    border: 1px solid $sunglow;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+  }
+  th {
+    color: $sunglow;
+  }
+  tr {
+    color: $white;
+  }
+  table a {
+    color: $white;
+    opacity: 0.5;
+  }
+}
+
+.tbl {
+  width: 100%;
+  margin: 0 auto;
+}

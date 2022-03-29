@@ -1,0 +1,72 @@
+@import "./variables";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Abel", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $firefly;
+}
+
+.app {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.06)
+    ),
+    #0f2330;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.06)
+    ),
+    #0f2330;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: $sunglow;
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 0 1rem;
+  }
+}

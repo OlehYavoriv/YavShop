@@ -1,0 +1,47 @@
+@import "../../../../styles/variables.scss";
+
+.filter__menu {
+  width: 100%;
+  min-height: 4rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+  select,
+  input {
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.06),
+        rgba(255, 255, 255, 0.06)
+      ),
+      #0f2330;
+    color: $white;
+    height: 4rem;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+  input {
+    flex: 1;
+    margin: 0 10px;
+    &::placeholder {
+      color: $white;
+      opacity: 0.5;
+    }
+  }
+}
+
+
+@media(max-width:550px){
+  .filter__menu{
+    flex-wrap: wrap;
+    gap: 1rem;
+    input{
+      margin: 0;
+    }
+  }
+  
+}

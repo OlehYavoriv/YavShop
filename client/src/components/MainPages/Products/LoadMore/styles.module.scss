@@ -1,0 +1,17 @@
+@import "../../../../styles/variables.scss";
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  &__btn {
+    background-color: $sunglow;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+  }
+}
